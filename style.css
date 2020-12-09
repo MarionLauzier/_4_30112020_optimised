@@ -829,6 +829,22 @@ h4 {
 .cite {
 	color: #575757;
 }
+.infobulle {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.infobulle:hover::after,
+.infobulle:focus::after {
+	content: attr(aria-label); /* on affiche aria-label */
+	padding: 2px 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 12px;
+	border-radius: 3px;
+	font-family: "helvetica";
+	font-weight: 600;
+}
 @media (max-width: 1024px) {
 	.bloc {
 		padding-left: 20px;
