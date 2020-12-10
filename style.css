@@ -533,7 +533,8 @@ button {
 
 a[data-lightbox] {
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: center;
 	text-align: center;
 }
 
@@ -824,7 +825,7 @@ h4 {
 }
 
 .bg-presentation {
-	background-image: url("img/image-de-presentation.bmp");
+	background-image: url("img/image-de-presentation.jpg");
 }
 .cite {
 	color: #575757;
