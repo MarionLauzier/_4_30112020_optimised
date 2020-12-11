@@ -10,7 +10,6 @@ body {
 a,
 button {
 	transition: all 0.3s ease-in-out;
-	outline: none !important;
 }
 
 a:hover {
@@ -462,7 +461,8 @@ nav .caret {
 }
 
 button {
-	outline: none !important;
+	/* outline: none !important;
+} */
 }
 
 .btn-rd {
@@ -606,9 +606,14 @@ a[data-lightbox]:hover img {
 
 .close-lightbox:hover,
 .next-lightbox:hover,
-.prev-lightbox:hover {
+.prev-lightbox:hover,
+.close-lightbox:focus,
+.next-lightbox:focus,
+.prev-lightbox:focus {
 	opacity: 1;
 	color: #fff;
+	transform: scale(1.2);
+	outline: 0;
 }
 
 .next-lightbox,
@@ -681,7 +686,7 @@ a {
 }
 
 p {
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -709,7 +714,7 @@ p {
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 24px;
 	line-height: 1.4em;
 }
 
@@ -794,19 +799,25 @@ h4 {
 .btn-atomic-tangerine {
 	background: #f3976c;
 	color: #303030 !important;
+	transition: all ease 300ms;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
 	background: #c27956 !important;
 	color: #ffffff !important;
+	transform: scale(1.2);
 }
 
 .ltc-white {
 	color: #ffffff !important;
+	transform: scale(1);
+	display: block;
 }
 
 .ltc-white:hover {
 	color: #cccccc !important;
+	transform: scale(1.2);
 }
 
 .ltc-atomic-tangerine {
@@ -971,6 +982,7 @@ h4 {
 	.nav > li:hover {
 		background: rgba(0, 0, 0, 0.08);
 	}
+
 	.dropdown .dropdown a .caret {
 		float: none;
 		margin: 5px 0 0 10px !important;
