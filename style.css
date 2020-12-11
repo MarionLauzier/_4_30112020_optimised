@@ -438,6 +438,7 @@ nav .caret {
 .mg-md {
 	margin-top: 10px;
 	margin-bottom: 20px;
+	position: relative;
 }
 
 .mg-lg {
@@ -457,7 +458,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
 	color: #fff;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 button {
@@ -596,11 +597,11 @@ a[data-lightbox]:hover img {
 	top: 20px;
 	right: 20px;
 	z-index: 20;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 	border: none;
 	line-height: 30px;
 	padding: 0 9px 5px;
-	opacity: 0.3;
+	opacity: 0.7;
 }
 
 .close-lightbox:hover,
@@ -614,12 +615,12 @@ a[data-lightbox]:hover img {
 .prev-lightbox {
 	font-size: 20px;
 	color: rgba(255, 255, 255, 0.9);
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 	transition: all 0.2s ease-in-out;
 	position: absolute;
 	top: 45%;
 	z-index: 1;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 
 .next-lightbox {
@@ -704,7 +705,7 @@ p {
 
 .social {
 	max-width: 400px;
-	margin: auto auto auto auto;
+	margin: auto auto 10px auto;
 }
 
 h2 {
@@ -726,7 +727,7 @@ h3 {
 }
 
 h1 {
-	color: #333333 !important;
+	color: #000000 !important;
 }
 
 h4 {
@@ -740,6 +741,12 @@ h4 {
 
 .white {
 	color: #ffffff !important;
+}
+.black {
+	color: #000000 !important;
+}
+.darkgrey {
+	color: #303030 !important;
 }
 
 .portfolio-thumb {
@@ -756,7 +763,7 @@ h4 {
 }
 
 .black-background {
-	background-color: rgba(165, 147, 99, 0.7);
+	background-color: rgba(101, 77, 44, 0.7);
 	padding: 40px 40px 40px 40px;
 }
 
@@ -778,12 +785,15 @@ h4 {
 }
 
 .tc-white {
-	color: #f3976c !important;
+	color: #f7bca1 !important;
+}
+.tc-tang {
+	color: #f3976c !important ;
 }
 
 .btn-atomic-tangerine {
 	background: #f3976c;
-	color: #ffffff !important;
+	color: #303030 !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -834,6 +844,12 @@ h4 {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+}
+.icon-grey {
+	color: rgba(0, 0, 0, 0.5) !important;
+}
+.icon-grey:hover {
+	color: white !important;
 }
 .infobulle:hover::after,
 .infobulle:focus::after {
