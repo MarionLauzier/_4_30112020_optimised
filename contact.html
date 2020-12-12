@@ -14,7 +14,7 @@
 		/>
 		<link rel="shortcut icon" type="image/png" href="favicon.png" />
 
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap..min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.min.css" />
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
 
@@ -153,7 +153,12 @@
 		</main>
 
 		<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
+		<a
+			class="bloc-button btn btn-d scrollToTop"
+			tabindex="0"
+			aria-label="Haut de la page"
+			onkeydown="scrollToTarget('1')"
+			onclick="scrollToTarget('1')"
 			><span class="fa fa-chevron-up white"></span
 		></a>
 		<!-- ScrollToTop Button END-->

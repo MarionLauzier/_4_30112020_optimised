@@ -4232,9 +4232,11 @@ fieldset[disabled] .btn-link:hover {
 	border-radius: 3px;
 }
 
-.btn-block {
+.btn-block.bloc-button {
 	display: block;
-	width: 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btn-block + .btn-block {
@@ -4865,6 +4867,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover {
 	text-decoration: underline;
 	background-color: #eee;
+}
+.nav > li > a:hover {
 	outline: 0;
 }
 
@@ -5293,6 +5297,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 	.navbar-nav .open .dropdown-menu > li > a:focus,
 	.navbar-nav .open .dropdown-menu > li > a:hover {
 		background-image: none;
+	}
+	.navbar-nav.nav > li > a:focus {
+		outline: 0;
+		background: rgba(0, 0, 0, 0.08);
 	}
 }
 
